@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismModular", "PrismModular\PrismModular.csproj", "{CD88641C-2038-4B29-92DC-25FE75D70185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismModular", "PrismModular\PrismModular.csproj", "{CD88641C-2038-4B29-92DC-25FE75D70185}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{419EA323-742A-4C6A-9CDA-393EC0B43993}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuRegion", "MenuRegion\MenuRegion.csproj", "{05FF0060-F1AE-4E26-8E7D-0922AB708155}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{16DB2AA4-8C00-4BA7-8B41-222BF5C4A2E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavRegion", "NavRegion\NavRegion.csproj", "{721D6C3B-A0D6-4F1C-88A7-F36760F1C50D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatusRegion", "StatusRegion\StatusRegion.csproj", "{92C1927B-B37F-4A72-B0FA-241EA666D08B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainRegion", "MainRegion\MainRegion.csproj", "{187C1ADE-DE7B-495A-A2CD-D4F6B3F909F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,35 @@ Global
 		{CD88641C-2038-4B29-92DC-25FE75D70185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD88641C-2038-4B29-92DC-25FE75D70185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD88641C-2038-4B29-92DC-25FE75D70185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05FF0060-F1AE-4E26-8E7D-0922AB708155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05FF0060-F1AE-4E26-8E7D-0922AB708155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05FF0060-F1AE-4E26-8E7D-0922AB708155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05FF0060-F1AE-4E26-8E7D-0922AB708155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DB2AA4-8C00-4BA7-8B41-222BF5C4A2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DB2AA4-8C00-4BA7-8B41-222BF5C4A2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DB2AA4-8C00-4BA7-8B41-222BF5C4A2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DB2AA4-8C00-4BA7-8B41-222BF5C4A2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721D6C3B-A0D6-4F1C-88A7-F36760F1C50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721D6C3B-A0D6-4F1C-88A7-F36760F1C50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721D6C3B-A0D6-4F1C-88A7-F36760F1C50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721D6C3B-A0D6-4F1C-88A7-F36760F1C50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C1927B-B37F-4A72-B0FA-241EA666D08B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C1927B-B37F-4A72-B0FA-241EA666D08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C1927B-B37F-4A72-B0FA-241EA666D08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C1927B-B37F-4A72-B0FA-241EA666D08B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187C1ADE-DE7B-495A-A2CD-D4F6B3F909F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187C1ADE-DE7B-495A-A2CD-D4F6B3F909F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187C1ADE-DE7B-495A-A2CD-D4F6B3F909F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187C1ADE-DE7B-495A-A2CD-D4F6B3F909F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05FF0060-F1AE-4E26-8E7D-0922AB708155} = {419EA323-742A-4C6A-9CDA-393EC0B43993}
+		{721D6C3B-A0D6-4F1C-88A7-F36760F1C50D} = {419EA323-742A-4C6A-9CDA-393EC0B43993}
+		{92C1927B-B37F-4A72-B0FA-241EA666D08B} = {419EA323-742A-4C6A-9CDA-393EC0B43993}
+		{187C1ADE-DE7B-495A-A2CD-D4F6B3F909F4} = {419EA323-742A-4C6A-9CDA-393EC0B43993}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42B1F98F-A517-47A3-B171-081ACD2EC92D}
