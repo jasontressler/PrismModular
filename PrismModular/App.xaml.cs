@@ -6,6 +6,7 @@ using Prism.Modularity;
 using MenuRegion;
 using NavRegion;
 using StatusRegion;
+using MainRegion;
 
 namespace PrismModular {
     /// <summary>
@@ -67,6 +68,7 @@ namespace PrismModular {
             moduleCatalog.AddModule<MenuRegionModule>();
             moduleCatalog.AddModule<NavRegionModule>();
             moduleCatalog.AddModule<StatusRegionModule>();
+            moduleCatalog.AddModule<MainRegionModule>();
         }
     }
 }
