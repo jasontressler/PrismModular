@@ -1,18 +1,25 @@
 ﻿using Prism.Commands;
-using Prism.Ioc;
-using Prism.Modularity;
-using Prism.Mvvm;
+using Prism.Regions;
+using Infrastructure.Constants;
+using Infrastructure.Common;
 
 namespace PrismModular.ViewModels
 {
-    public class NavRegionViewModel : BindableBase
+    public class NavRegionViewModel : ViewModelBase
     {
-        public string Button1_Text => "Configure";
-        public string Button2_Text => "Process";
-        public string Button3_Text => "Exit";
+        public DelegateCommand NavigateProcessCommand { get; } 
+        public DelegateCommand NavigateConfigureCommand { get; }
 
-        public DelegateCommand Button1_Command => null;
-        public DelegateCommand Button2_Command => null;
-        public DelegateCommand Button3_Command => null;
+        public string Process => "Process";
+
+        public NavRegionViewModel(IRegionManager regionManager) : base(regionManager)
+        {
+            NavigateProcessCommand = new DelegateCommand(NavigateToProcess);
+            NavigateConfigureCommand = new DelegateCommand(NavigateToConfigure);
+        }
+
+        private void NavigateToProcess() => RegionManager.RequestNavigate(RegionNames.SHELL_MAIN_REGION, "Process");
+
+        private void NavigateToConfigure() => RegionManager.RequestNavigate(RegionNames.SHELL_MAIN_REGION, "Configure");
     }
 }
