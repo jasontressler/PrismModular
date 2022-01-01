@@ -1,6 +1,6 @@
-﻿using Prism.Modularity;
-using Infrastructure.Constants;
+﻿using Infrastructure.Constants;
 using Prism.Ioc;
+using Prism.Modularity;
 using Prism.Regions;
 using StatusBarRegion.Views;
 

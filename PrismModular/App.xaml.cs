@@ -1,13 +1,12 @@
-﻿using Prism.Ioc;
-using Prism.Unity;
-using System.Windows;
-using Prism.Mvvm;
-using Prism.Modularity;
+﻿using Infrastructure.Common;
+using MainRegion;
 using MenuRegion;
 using NavRegion;
+using Prism.Ioc;
+using Prism.Modularity;
+using Prism.Unity;
 using StatusBarRegion;
-using MainRegion;
-using Infrastructure.Common;
+using System.Windows;
 
 namespace PrismModular
 {

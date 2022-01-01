@@ -1,7 +1,5 @@
-﻿using Prism.Commands;
-using Prism.Regions;
-using Infrastructure.Constants;
-using Infrastructure.Common;
+﻿using Infrastructure.Common;
+using Prism.Commands;
 
 namespace NavRegion.ViewModels
 {

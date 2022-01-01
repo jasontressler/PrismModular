@@ -1,5 +1,4 @@
 ﻿using Infrastructure.Common;
-using Prism.Regions;
 
 
 namespace MainRegion.ViewModels

@@ -1,9 +1,8 @@
-﻿using Prism.Ioc;
-using Prism.Modularity;
-using Prism.Mvvm;
-using Prism.Regions;
-using Infrastructure.Constants;
+﻿using Infrastructure.Constants;
 using MenuRegion.Views;
+using Prism.Ioc;
+using Prism.Modularity;
+using Prism.Regions;
 
 namespace MenuRegion
 {

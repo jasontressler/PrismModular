@@ -1,8 +1,8 @@
-﻿using Prism.Ioc;
+﻿using Infrastructure.Constants;
+using NavRegion.Views;
+using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
-using Infrastructure.Constants;
-using NavRegion.Views;
 
 namespace NavRegion
 {
