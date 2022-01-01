@@ -17,10 +17,10 @@
     <Grid>
         <Menu>
             <MenuItem Header="{x:Static text:Text.File}">
-                <MenuItem Header="{x:Static text:Text.Process}" Command="NavigateProcessCommand"/>
-                <MenuItem Header="{x:Static text:Text.Configure}" Command="NavigateConfigureCommand"/>
+                <MenuItem Header="{x:Static text:Text.Process}" Command="{Binding NavigateProcessCommand}"/>
+                <MenuItem Header="{x:Static text:Text.Configure}" Command="{Binding NavigateConfigureCommand}"/>
                 <Separator/>
-                <MenuItem Header="{x:Static text:Text.Exit}"/>
+                <MenuItem Header="{x:Static text:Text.Exit}" Command="{Binding ExitCommand}"/>
             </MenuItem>
             <MenuItem Header="{x:Static text:Text.Help}">
                 <MenuItem Header="{x:Static text:Text.About}"/>
