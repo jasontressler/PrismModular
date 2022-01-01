@@ -22,7 +22,7 @@ namespace Infrastructure.SharedResources.Strings {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Text {
+    public class Text {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Infrastructure.SharedResources.Strings {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Infrastructure.SharedResources.Strings.Text", typeof(Text).Assembly);
@@ -51,7 +51,7 @@ namespace Infrastructure.SharedResources.Strings {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Infrastructure.SharedResources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to About.
         /// </summary>
-        internal static string About {
+        public static string About {
             get {
                 return ResourceManager.GetString("About", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Infrastructure.SharedResources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Configure.
         /// </summary>
-        internal static string Configure {
+        public static string Configure {
             get {
                 return ResourceManager.GetString("Configure", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Infrastructure.SharedResources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Edit.
         /// </summary>
-        internal static string Edit {
+        public static string Edit {
             get {
                 return ResourceManager.GetString("Edit", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Infrastructure.SharedResources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Exit.
         /// </summary>
-        internal static string Exit {
+        public static string Exit {
             get {
                 return ResourceManager.GetString("Exit", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace Infrastructure.SharedResources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to File.
         /// </summary>
-        internal static string File {
+        public static string File {
             get {
                 return ResourceManager.GetString("File", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace Infrastructure.SharedResources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Help.
         /// </summary>
-        internal static string Help {
+        public static string Help {
             get {
                 return ResourceManager.GetString("Help", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Infrastructure.SharedResources.Strings {
         /// <summary>
         ///   Looks up a localized string similar to Process.
         /// </summary>
-        internal static string Process {
+        public static string Process {
             get {
                 return ResourceManager.GetString("Process", resourceCulture);
             }
