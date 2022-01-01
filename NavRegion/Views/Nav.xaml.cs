@@ -1,13 +1,13 @@
 ﻿using System.Windows.Controls;
 
-namespace NavRegion
+namespace NavRegion.Views
 {
     /// <summary>
     /// Interaction logic for NavigationView.xaml
     /// </summary>
-    public partial class NavRegion : UserControl
+    public partial class Nav : UserControl
     {
-        public NavRegion()
+        public Nav()
         {
             InitializeComponent();
         }

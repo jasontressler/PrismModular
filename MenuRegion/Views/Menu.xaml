@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="MenuRegion.MenuRegion"
+<UserControl x:Class="MenuRegion.Views.Menu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -17,8 +17,8 @@
     <Grid>
         <Menu>
             <MenuItem Header="{x:Static text:Text.File}">
-                <MenuItem Header="{x:Static text:Text.Process}"/>
-                <MenuItem Header="{x:Static text:Text.Configure}"/>
+                <MenuItem Header="{x:Static text:Text.Process}" Command="NavigateProcessCommand"/>
+                <MenuItem Header="{x:Static text:Text.Configure}" Command="NavigateConfigureCommand"/>
                 <Separator/>
                 <MenuItem Header="{x:Static text:Text.Exit}"/>
             </MenuItem>

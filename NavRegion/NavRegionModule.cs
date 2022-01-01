@@ -2,6 +2,7 @@
 using Prism.Modularity;
 using Prism.Regions;
 using Infrastructure.Constants;
+using NavRegion.Views;
 
 namespace NavRegion
 {
@@ -10,12 +11,12 @@ namespace NavRegion
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RequestNavigate(RegionNames.SHELL_NAV_REGION, ModuleNames.NAV_REGION);
+            regionManager.RequestNavigate(RegionNames.SHELL_NAV_REGION, ModuleNames.NAV);
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<NavRegion>();
+            containerRegistry.RegisterForNavigation<Nav>();
         }
     }
 }

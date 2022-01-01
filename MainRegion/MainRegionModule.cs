@@ -1,9 +1,9 @@
 ﻿using Infrastructure.Constants;
-using MainRegion.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 using System;
+using MainRegion.Views;
 
 
 

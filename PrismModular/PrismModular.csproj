@@ -17,7 +17,7 @@
     <ProjectReference Include="..\MainRegion\MainRegion.csproj" />
     <ProjectReference Include="..\MenuRegion\MenuRegion.csproj" />
     <ProjectReference Include="..\NavRegion\NavRegion.csproj" />
-    <ProjectReference Include="..\StatusRegion\StatusRegion.csproj" />
+    <ProjectReference Include="..\StatusRegion\StatusBarRegion.csproj" />
   </ItemGroup>
 
 </Project>

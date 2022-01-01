@@ -6,7 +6,7 @@ namespace MainRegion.ViewModels
 {
     public class ProcessViewModel : ViewModelBase
     {
-        public ProcessViewModel(IRegionManager regionManager) : base(regionManager)
+        public ProcessViewModel(INavigationService navigationService) : base(navigationService)
         {
 
         }

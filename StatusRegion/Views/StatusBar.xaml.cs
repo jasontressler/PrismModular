@@ -1,13 +1,13 @@
 ﻿using System.Windows.Controls;
 
-namespace StatusRegion
+namespace StatusBarRegion.Views
 {
     /// <summary>
     /// Interaction logic for StatusView.xaml
     /// </summary>
-    public partial class StatusRegion : UserControl
+    public partial class StatusBar : UserControl
     {
-        public StatusRegion()
+        public StatusBar()
         {
             InitializeComponent();
         }

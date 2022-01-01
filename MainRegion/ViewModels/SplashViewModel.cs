@@ -5,9 +5,9 @@ namespace MainRegion.ViewModels
 {
     public class SplashViewModel : ViewModelBase
     {
-        public SplashViewModel(IRegionManager regionManager) : base(regionManager)
+        public SplashViewModel(INavigationService navigationService) : base(navigationService)
         {
-            
+
         }
 
     }

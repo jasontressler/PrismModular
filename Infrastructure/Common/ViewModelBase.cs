@@ -10,11 +10,11 @@ namespace Infrastructure.Common
 {
     public class ViewModelBase : BindableBase, INavigationAware
     {
-        protected IRegionManager RegionManager { get; }
+        protected INavigationService NavigationService { get; }
 
-        public ViewModelBase(IRegionManager regionManager)
+        public ViewModelBase(INavigationService navigationService)
         {
-            RegionManager = regionManager;
+            NavigationService = navigationService;
         }
 
         public virtual bool IsNavigationTarget(NavigationContext navigationContext)

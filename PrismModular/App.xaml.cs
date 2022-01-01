@@ -5,10 +5,12 @@ using Prism.Mvvm;
 using Prism.Modularity;
 using MenuRegion;
 using NavRegion;
-using StatusRegion;
+using StatusBarRegion;
 using MainRegion;
+using Infrastructure.Common;
 
-namespace PrismModular {
+namespace PrismModular
+{
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
@@ -22,8 +24,7 @@ namespace PrismModular {
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            //throw new NotImplementedException();
-            //containerRegistry.Register<IService, Service>();
+            containerRegistry.Register<INavigationService, NavigationService>();
         }
 
         protected override void ConfigureViewModelLocator()
@@ -67,7 +68,7 @@ namespace PrismModular {
         {
             moduleCatalog.AddModule<MenuRegionModule>();
             moduleCatalog.AddModule<NavRegionModule>();
-            moduleCatalog.AddModule<StatusRegionModule>();
+            moduleCatalog.AddModule<StatusBarRegionModule>();
             moduleCatalog.AddModule<MainRegionModule>();
         }
     }

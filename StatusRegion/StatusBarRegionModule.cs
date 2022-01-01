@@ -2,20 +2,21 @@
 using Infrastructure.Constants;
 using Prism.Ioc;
 using Prism.Regions;
+using StatusBarRegion.Views;
 
-namespace StatusRegion
+namespace StatusBarRegion
 {
-    public class StatusRegionModule : IModule
+    public class StatusBarRegionModule : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RequestNavigate(RegionNames.SHELL_STATUS_REGION, ModuleNames.STATUS_REGION);
+            regionManager.RequestNavigate(RegionNames.SHELL_STATUS_REGION, ModuleNames.STATUS);
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<StatusRegion>();
+            containerRegistry.RegisterForNavigation<StatusBar>();
         }
     }
 }

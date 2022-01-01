@@ -1,13 +1,13 @@
 ﻿using System.Windows.Controls;
 
-namespace MenuRegion
+namespace MenuRegion.Views
 {
     /// <summary>
     /// Interaction logic for MenuView.xaml
     /// </summary>
-    public partial class MenuRegion : UserControl
+    public partial class Menu : UserControl
     {
-        public MenuRegion()
+        public Menu()
         {
             InitializeComponent();
         }

@@ -5,7 +5,7 @@ namespace MainRegion.ViewModels
 {
     public class ConfigureViewModel : ViewModelBase
     {
-        public ConfigureViewModel(IRegionManager regionManager) : base(regionManager)
+        public ConfigureViewModel(INavigationService navigationService) : base(navigationService)
         {
 
         }
