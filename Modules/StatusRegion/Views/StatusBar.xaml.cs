@@ -3,7 +3,7 @@
 namespace StatusBarRegion.Views
 {
     /// <summary>
-    /// Interaction logic for StatusView.xaml
+    /// Status bar for relaying status information to the user.
     /// </summary>
     public partial class StatusBar : UserControl
     {

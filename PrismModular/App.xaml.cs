@@ -15,24 +15,45 @@ namespace PrismModular
     /// </summary>
     public partial class App : PrismApplication
     {
+        /// <summary><inheritdoc/></summary>
+        /// <remarks>REQUIRED: Use this to create your shell window instead of StartupUri in your App.xaml</remarks>
         protected override Window CreateShell()
         {
             var w = Container.Resolve<Shell>();
             return (Window)w;
         }
 
+        /// <summary><inheritdoc/></summary>
+        /// <remarks>REQUIRED: You must override this method to include all the modules your application will use so it can start loading them up.</remarks>
+        /// <param name="moduleCatalog">Container where modules are registered.</param>
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<MenuRegionModule>();
+            moduleCatalog.AddModule<NavRegionModule>();
+            moduleCatalog.AddModule<StatusBarRegionModule>();
+            moduleCatalog.AddModule<MainRegionModule>();
+        }
+
+        /// <summary><inheritdoc/></summary>
+        /// <remarks>OPTIONAL: You can override this method to register services for dependency injection.</remarks>
+        /// <param name="containerRegistry">Container where servies are registered for dependency injection.</param>
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<INavigationService, NavigationService>();
         }
 
+        /// <summary><inheritdoc/></summary>
+        /// <remarks>OPTIONAL: You can override this method to customize how Prism handles autowiring ViewModels.</remarks>
         protected override void ConfigureViewModelLocator()
         {
             base.ConfigureViewModelLocator();
 
             #region Explicity bind View to ViewModel
             /* 
-             * This is useful when you deviate from a naming convention.
+             * This is useful when you deviate from the default naming convention.
+             * Default convention is:
+             *    - A view name "X" should be in namespace "Views" (ProjectName.Views.X)
+             *    - The associated view model should be called "XViewModel" and be in namespace "ViewModels" (ProjectName.ViewModels.XViewModel)
              * This is also useful for speeding up your application because
              * the default autowiring uses resource-heavy reflection.
              * There are 4 ways to do this:
@@ -63,12 +84,5 @@ namespace PrismModular
             #endregion
         }
 
-        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
-        {
-            moduleCatalog.AddModule<MenuRegionModule>();
-            moduleCatalog.AddModule<NavRegionModule>();
-            moduleCatalog.AddModule<StatusBarRegionModule>();
-            moduleCatalog.AddModule<MainRegionModule>();
-        }
     }
 }

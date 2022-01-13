@@ -3,11 +3,11 @@
 namespace MainRegion.Views
 {
     /// <summary>
-    /// Interaction logic for Configure.xaml
+    /// Welcome screen for the application.
     /// </summary>
-    public partial class Configure : UserControl
+    public partial class Splash : UserControl
     {
-        public Configure()
+        public Splash()
         {
             InitializeComponent();
         }

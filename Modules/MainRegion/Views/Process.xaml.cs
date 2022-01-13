@@ -3,11 +3,11 @@
 namespace MainRegion.Views
 {
     /// <summary>
-    /// Interaction logic for Main.xaml
+    /// View encapsulating main application functionality.
     /// </summary>
-    public partial class Splash : UserControl
+    public partial class Process : UserControl
     {
-        public Splash()
+        public Process()
         {
             InitializeComponent();
         }

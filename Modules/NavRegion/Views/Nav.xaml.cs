@@ -3,7 +3,7 @@
 namespace NavRegion.Views
 {
     /// <summary>
-    /// Interaction logic for NavigationView.xaml
+    /// Side bar for controlling navigation between views.
     /// </summary>
     public partial class Nav : UserControl
     {

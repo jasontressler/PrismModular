@@ -3,7 +3,7 @@ using Prism.Regions;
 
 namespace Infrastructure.Common
 {
-    public class ViewModelBase : BindableBase, INavigationAware
+    public abstract class ViewModelBase : BindableBase, INavigationAware
     {
         protected INavigationService NavigationService { get; }
 

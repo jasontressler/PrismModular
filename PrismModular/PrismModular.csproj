@@ -12,10 +12,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
-    <ProjectReference Include="..\MainRegion\MainRegion.csproj" />
-    <ProjectReference Include="..\MenuRegion\MenuRegion.csproj" />
-    <ProjectReference Include="..\NavRegion\NavRegion.csproj" />
-    <ProjectReference Include="..\StatusRegion\StatusBarRegion.csproj" />
+    <ProjectReference Include="..\Modules\MainRegion\MainRegion.csproj" />
+    <ProjectReference Include="..\Modules\MenuRegion\MenuRegion.csproj" />
+    <ProjectReference Include="..\Modules\NavRegion\NavRegion.csproj" />
+    <ProjectReference Include="..\Modules\StatusRegion\StatusBarRegion.csproj" />
   </ItemGroup>
 
 </Project>

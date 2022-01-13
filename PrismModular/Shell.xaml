@@ -1,9 +1,17 @@
-﻿<Window x:Class="PrismModular.Shell"
+﻿<!-- This is view is strictly the shell for all other views to be loaded into and should only contain layout information. -->
+<!--Note the 
+        - xmlns:prism="http://prismlibrary.com
+        - prism:ViewModelLocator.AutoWireViewModel="True"
+     These are required by Prism for a View to automatically find and create an instance of the associated ViewModel.
+     By default, Views should be located in a 'Views' namespace (ProjectName.Views.X) and
+     ViewModels should be located in a 'ViewModels' namespace and have the same name of the associated View, but
+     end with 'ViewModel' (ProjectName.ViewModels.XViewModel). -->
+<Window x:Class="PrismModular.Shell"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:prism="http://www.codeplex.com/prism"
+        xmlns:prism="http://prismlibrary.com/"
         xmlns:constants="clr-namespace:Infrastructure.Constants;assembly=Infrastructure"
         prism:ViewModelLocator.AutoWireViewModel="True"
         mc:Ignorable="d"
@@ -18,6 +26,12 @@
             <ColumnDefinition Width=".25*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <!--As stated previously, this View should only contain layout information. Since we are dynamically loading partial Views into the shell,
+            we'll use the ContentControl so that any type of content can be loaded in. 
+        
+            We are also going to assign a name to these controls (regions) via the Prism RegionManager.RegionName property so they can be referenced 
+            later to direct Prism which region to load a View into. These can be regular strings; I used a static class in a shared library to
+            prevent typos later and save myself time should I choose to rename things in the future (see Infrastructure.Constants.RegionNames). -->
         <ContentControl Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" prism:RegionManager.RegionName="{x:Static constants:RegionNames.SHELL_MENU_REGION}"/>
         <ContentControl Grid.Row="1" Grid.Column="0" prism:RegionManager.RegionName="{x:Static constants:RegionNames.SHELL_NAV_REGION}"/>
         <ContentControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" prism:RegionManager.RegionName="{x:Static constants:RegionNames.SHELL_STATUS_REGION}"/>

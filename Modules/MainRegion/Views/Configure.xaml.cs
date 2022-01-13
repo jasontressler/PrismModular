@@ -3,11 +3,11 @@
 namespace MainRegion.Views
 {
     /// <summary>
-    /// Interaction logic for Process.xaml
+    /// View for configuring application settings.
     /// </summary>
-    public partial class Process : UserControl
+    public partial class Configure : UserControl
     {
-        public Process()
+        public Configure()
         {
             InitializeComponent();
         }

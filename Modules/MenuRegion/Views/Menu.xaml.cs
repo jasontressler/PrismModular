@@ -3,7 +3,7 @@
 namespace MenuRegion.Views
 {
     /// <summary>
-    /// Interaction logic for MenuView.xaml
+    /// Menu bar for auxilliary functions.
     /// </summary>
     public partial class Menu : UserControl
     {
